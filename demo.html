@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  demo
+  dddddddddddddddddddd
+  <script>
+    document.body.onclick = function () {
+      alert(window.Notification);
+      var myNotification = new Notification("标题", {
+        body: "通知正文内容"
+      });
+      myNotification.onclick = () => {
+        console.log("通知被点击");
+      };
+      myNotification.show()
+    }
+
+  </script>
+</body>
+
+</html>

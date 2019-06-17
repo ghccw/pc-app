@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <style>
+    html {
+      background-color: #fff;
+    }
+
+    .header {
+      height: 50px;
+      line-height: 50px;
+      padding-right: 20px;
+      background-color: #333;
+      -webkit-app-region: drags;
+      color: #fff;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+
+    <span id="max">最大化</span>
+    <span id="minimize">最小化</span>
+    <span id="fullScreen">全屏</span>
+
+  </div>
+  <h1>Hello World!</h1>
+  We are using Node.js <span id="node-version"></span>, Chromium
+  <span id="chrome-version"></span>, and Electron
+  <span id="electron-version"></span>.
+  <iframe src="https://www.demo.com/" autosize minwidth="576" minheight="432"></iframe>
+  <div>ddddddd</div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+
+</body>
+
+</html>
