@@ -3,19 +3,18 @@
 // const ipcRenderer = window.electron.ipcRenderer;\
 
 window.addEventListener("DOMContentLoaded", () => {
-
-  for (const versionType of ["chrome", "electron", "node"]) {
-    document.getElementById(`${versionType}-version`).innerText =
-      process.versions[versionType];
-  }
-  const electron = require('electron')
+  // for (const versionType of ["chrome", "electron", "node"]) {
+  //   document.getElementById(`${versionType}-version`).innerText =
+  //     process.versions[versionType];
+  // }
+  const electron = require("electron");
   const { ipcRenderer } = electron;
 
-  var minimize = document.getElementById('minimize');
+  var minimize = document.getElementById("minimize");
 
-  var fullScreen = document.getElementById('fullScreen');
+  var fullScreen = document.getElementById("fullScreen");
 
-  minimize.addEventListener('click', function () {
+  minimize.addEventListener("click", function() {
     // let myNotification = new Notification("标题", {
     //   body: "通知正文内容"
     // });
@@ -26,8 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
     ipcRenderer.send("minimize");
   });
 
-  fullScreen.addEventListener('click', function () {
+  fullScreen.addEventListener("click", function() {
     ipcRenderer.send("fullScreen");
   });
-
 });
