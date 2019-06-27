@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-packager . myClient --win --out ../myClient --arch=x64 --app-version=0.0.1 --electron-version=2.0.0"
+    "pack": "electron-packager . huihui --win --out ../huihui --arch=x64 --app-version=0.0.1 --electron-version=2.0.0 --icon=assets/huihui-logo-128.ico"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
